@@ -1,6 +1,7 @@
 <script>
     const ano = Number(prompt('Informe seu ano de nascimento'));
-    if(ano <= 2005) {
+
+    if(new Date().getFullYear() - ano >= 18) {
         alert('Já atingiu a maioridade');
     }
     else {
